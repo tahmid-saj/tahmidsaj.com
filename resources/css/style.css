@@ -1,0 +1,532 @@
+/* Setup */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #fff;
+	color: #bcbcbc;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	/* overflow: hidden; OVERFLOW HIDDEN */ 
+}
+
+/* Reusable components */
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 80px 0;
+}
+
+.box {
+	padding: 1%;
+}
+
+/* Headings #e64f22 after visit: #c9451e*/
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 180%;
+	word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h4 {
+	color: #fff;
+	margin-top: 80px;
+	font-style: italic;
+	font-weight: 150;
+	letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e64f22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.posts-welcome {
+	font-size: 130%;
+	color: #fff;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+    color: #e64f22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e64f22;
+    transition: border-bottom 0.2s, color 0.5s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/* Buttons */
+
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e64f22;
+    border: 1px solid #e64f22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-full-posts:link,
+.btn-full-posts:visited {
+	background-color: #9538f2;
+    border: 1px solid #9538f2;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e64f22;
+    color: #fff;
+}
+
+.btn-ghost-posts:link,
+.btn-ghost-posts:visited {
+	border: 1px solid #6728a7;
+    color: #fff;
+	margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #c9451e;
+	border: 1px solid #c9451e;
+}
+
+.btn-full-posts:hover,
+.btn-full-posts:active {
+	background-color: #6728a7;
+	border: 1px solid #6728a7;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #c9451e;
+	background-color: #c9451e;
+    color: #fff;
+}
+
+.btn-ghost-posts:hover,
+.btn-ghost-posts:active{
+    border: 1px solid #6728a7;
+	background-color: #6728a7;
+    color: #fff;
+}
+
+/* Headers */
+
+.index {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(226, 151, 87, 0.87)), url(img/sun.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.posts {
+	background-image: linear-gradient(rgba(122, 62, 193, 0.76), rgba(0, 0, 0, 0.86)), url(img/wisteria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+	margin-top: 60px;
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-text-box-posts {
+	margin-top: 60px;
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo {
+    height: 80px;
+	width: auto;
+    float: left;
+    margin-top: 20px;
+	
+}
+
+/* Main navigation */
+
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e64f22;
+}
+
+/* About section */
+
+.section-about {
+	background-color: #efefef;
+}
+
+.about-text {
+	color: #000;
+	padding-right: 100px;
+	padding-top: 30px;
+}
+
+.about-heading {
+	color: #000;
+}
+
+/* About picture */
+
+.about-picture {
+	max-width: 300px;
+	max-height: 300px;
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+/* Profile section */
+
+.section-profile {
+	background-image: linear-gradient(rgba(54, 21, 8, 0.82), rgba(44, 23, 6, 0.87)), url(img/nuclearplant.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.profile-text {
+	color: #000;
+	padding: 80px 80px 80px 80px;
+}
+
+.profile-heading {
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.profile-text {
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+/* Skills section */
+
+.section-skills {
+	background-color: #efefef;
+}
+
+.skills-text {
+	color: #000;
+}
+
+.skills-text-list {
+	color: #000;
+	font-size: 90%;
+}
+
+/* Icons */
+
+.skills-icons {
+	font-size: 200%;
+	display: block;
+	color: #e64f22;
+	margin-bottom: 10px;
+}
+
+.contact-icons {
+	font-size: 300%;
+	display: block;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+/* Projects section */
+
+.section-projects {
+	background-image: linear-gradient(rgba(51, 18, 5, 0.82), rgba(60, 31, 7, 0.87)), url(img/ml-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 515vh;
+    /* background-attachment: fixed; */
+}
+
+.project-text {
+	color: rgb(255, 255, 255);
+}
+
+.project-text-p {
+	color: #fff;
+	font-size: 75%;
+}
+
+.projects-box {
+	background-color: #000;
+	border-radius: 5px;
+	width: 32.26%;
+	margin-left: 1%;
+}
+
+.projects-box ul {
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.project-img {
+	padding-left: 27px;
+}
+
+/* interests section */
+
+.interests-text {
+	color: #000;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.section-interests {
+    padding: 100px 0 480px 0;
+	height: 310vh;
+	background-color: #e5e5e5; 
+}
+
+.section-interests h2 {
+	color: #000;
+}
+
+.interests-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.interests-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.interests-img {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.interests-img img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.interests-img img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* Contact section */
+
+.section-contact {
+	background-image: linear-gradient(rgba(51, 18, 5, 0.82), rgba(60, 31, 7, 0.87)), url(img/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.contact-heading-top {
+	color: #fff;
+}
+
+.contact-heading {
+	padding-top: 20px;
+	color: #fff;
+}
+
+.section-contact h3 {
+	padding-left: 235px;
+	padding-bottom: 30px;
+}
+
+.section-contact h4 {
+	padding-bottom: 40px;
+}
+
+.contact-box {
+	border-radius: 5px;
+	width: 24.1%;
+	margin-left: 1%;
+	background-color: #2e2e2e;
+}
+
+/* Footer section */
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80%;
+}
+
+.footer-designer {
+    float: left;
+}
+
+.footer-links {
+    list-style: none;
+    float: right;
+	font-size: 170%;
+	display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul:last-child {
+    margin-right: 0;
+}
+
+.footer-links li a:link,
+.footer-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-links li a:link,
+.footer-links li a:visited {
+    font-size: 160%;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+/* Posts page */
+
+.section-posts {
+	background-color: #efefef;
+}
+
+.posts-heading {
+	transform: uppercase;
+	font-weight: 300;
+	font-size: 180%;
+	word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+	color: #000;
+}
+
+.posts-heading:after {
+    display: block;
+    height: 2px;
+    background-color: #6728a7;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.posts-text-heading {
+	color: #000;
+	font-size: 90%
+}
+
+.posts-text {
+	color: #000;
+	font-size: 90%;
+	letter-spacing: 1px;
+	font-weight: 350;
+}
+
+.section-posts ul {
+	padding: 15px;
+	border-bottom: 1px solid #6728a7;
+}
